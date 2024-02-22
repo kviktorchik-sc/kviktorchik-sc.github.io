@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" width="width=device-width initial-scale=1.0 user-scalable=no" />
+  <title>
+    PureFlix
+  </title>
+  <!-- Polyfills are needed for older devices like WebOS4 - Chrome 52 -->
+  <script type="text/javascript" src="./polyfills.js"></script>
+  <script type="text/javascript" src="./loader.js"></script>
+</head>
+
+<body>
+  <div id="zapp_app_container"></div>
+  <div id="main-body"></div>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #main-body {
+      height: 100vh;
+      width: 100vw;
+      background-color: "#161B29";
+      background: url("./assets/lg_tv/splashBackground.png");
+      bottom: 0;
+      position: fixed;
+      z-index: 90;
+      transition: all 0.5s ease;
+    }
+
+    #activity-indicator {
+      top: 70%;
+      left: calc(50% - 35px);
+      position: fixed;
+      z-index: 100;
+    }
+
+    /* Animations available from Chrome 43+ */
+    #activity-icon {
+      height: 70px;
+      width: 70px;
+      animation-timing-function: linear;
+      animation-name: spin;
+      animation-duration: 0.75s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <div role="progressbar" aria-valuemax="1" aria-valuemin="0" id="activity-indicator">
+    <div id="activity-icon">
+      <svg height="100%" viewBox="0 0 32 32" width="100%">
+        <circle cx="16" cy="16" fill="none" r="14" stroke-width="4"
+          style="stroke: rgba(239, 239, 239, 1); opacity: 0.2"></circle>
+        <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="
+              stroke: rgba(239, 239, 239, 1);
+              stroke-dasharray: 80;
+              stroke-dashoffset: 60;
+            "></circle>
+      </svg>
+    </div>
+  </div>
+<script type="text/javascript" src="./runtime.983fa7a59e231d62dd84.bundle.js"></script><script type="text/javascript" src="./vendors.7df6cc6c551f967882cb.bundle.js"></script><script type="text/javascript" src="./applicaster.157f246b0d79ab0e57f2.bundle.js"></script><script type="text/javascript" src="./app.0e73d852bed3d885e9b3.bundle.js"></script></body>
+
+</html>

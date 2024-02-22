@@ -1,0 +1,10 @@
+{
+    "id": "com.applicaster.app.testapp",
+    "version": "0.0.1",
+    "vendor": "Applicaster",
+    "type": "web",
+    "main": "index.html",
+    "title": "TestApp",
+    "icon": "./assets/lg_tv/icon.png",
+    "largeIcon": "./assets/lg_tv/largeIcon.png"
+  }
